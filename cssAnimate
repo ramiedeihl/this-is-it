@@ -1,0 +1,31 @@
+
+
+<style>
+li:before {
+    content: "Read this -";
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+}
+
+
+#myDIV {
+    width: 300px;
+    height: 200px;
+    border: 15px solid coral;
+    animation: mymove 5s infinite;
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {border-color: lightblue;}
+}
+</style>
+
+
+<div id="myDIV"> 
+<ul>
+<li style="" id="playVideo" class="doDialog"><img data-dialog-y="bottom+350" data-dialog-x="left+20" data-dialog-width="455" data-dialog="showVideo" class="link trigger" title="Click to play video" alt="Video player icon" src="/Images/LPA/VideoICON4.png">
+</li>
+</ul>
+</div>
