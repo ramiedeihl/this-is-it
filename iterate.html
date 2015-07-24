@@ -1,0 +1,41 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<style>
+ul.container {
+	display:inline; 
+	width:100px;
+	float:left;
+	height:25px;
+	border: 1px solid #333;
+	margin:0 10px;
+	list-style-type:none;
+	
+	}
+
+li.category {display:none;}
+li.price {display:none;}
+ul.container:hover li.category {display:block;color:red;}
+ul.container:hover li.price {display:block;color:red;}
+</style>
+
+
+<div id="wrapper">
+    
+</div>
+
+<script>
+var grocery_list = {
+  "Banana": { category: "produce", price: 5.99 },
+  "Chocolate": { category: "candy", price: 2.75 },
+  "Wheat Bread": { category: "grains and breads", price: 2.99 }
+}
+
+var wrapper = $('#wrapper'), container;
+for (var key in grocery_list){
+    container = $('<ul class="container"></ul>');
+    wrapper.append(container);
+    container.append('<li class="item">' + key +'</li>');
+    container.append('<li class="category">' + grocery_list[key].category +'</li>');
+    container.append('<li class="price">' + grocery_list[key].price +'</li>');
+}
+
+</script>
