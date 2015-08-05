@@ -1,0 +1,30 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<div id="output"></div>
+
+<script>
+var grocery_list = {
+  "Banana": { category: "produce", price: 5.99 },
+  "Chocolate": { category: "candy", price: 2.75 },
+  "Wheat Bread": { category: "grains and breads", price: 2.99 }
+}
+
+
+// iterate with hasOwnProperty
+
+for (var flavor in grocery_list) {
+  
+  if (grocery_list.hasOwnProperty(flavor)) {
+    console.log('this ('+ flavor +') is  (' + grocery_list[flavor].category + '), value: ' + grocery_list[flavor].price);
+  }
+  else {
+    console.log(category); // toString or something else
+  }
+
+}
+
+// basic jQuery Output of object property
+$('#output').html('section - ' + grocery_list[flavor].category);
+
+</script>
+
+

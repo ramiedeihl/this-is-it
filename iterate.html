@@ -30,12 +30,33 @@ var grocery_list = {
 }
 
 var wrapper = $('#wrapper'), container;
+
 for (var key in grocery_list){
     container = $('<ul class="container"></ul>');
     wrapper.append(container);
     container.append('<li class="item">' + key +'</li>');
     container.append('<li class="category">' + grocery_list[key].category +'</li>');
     container.append('<li class="price">' + grocery_list[key].price +'</li>');
+	
+	console.log(key); // this is key
+	
 }
+console.log (grocery_list[key].price);
+console.log (key[2]);
+
+// standard loop with length caching
+
+var myAr = [1,2,3,4,5,6]
+
+var length = myAr.length;
+
+while( --length ) { //or length--
+
+console.log (length);
+
+ //do stuff
+
+}
+
 
 </script>
