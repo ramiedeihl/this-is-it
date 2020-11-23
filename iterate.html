@@ -1,4 +1,4 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <style>
 ul.container {
 	display:inline; 
@@ -23,6 +23,17 @@ ul.container:hover li.price {display:block;color:red;}
 </div>
 
 <script>
+	
+$(document).ready(function() {
+  // executes when HTML-Document is loaded and DOM is ready
+  console.log("document is ready");
+});
+
+$(window).load(function() {
+  // executes when complete page is fully loaded, including all frames, objects and images
+  console.log("window is loaded");
+});
+	
 var grocery_list = {
   "Banana": { category: "produce", price: 5.99 },
   "Chocolate": { category: "candy", price: 2.75 },
